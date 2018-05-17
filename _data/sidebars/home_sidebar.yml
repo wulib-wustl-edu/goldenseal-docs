@@ -128,6 +128,30 @@ entries:
       url: /lease-embargoes-2.0.html
       output: web, pdf
 
+    - title: Adding Custom Metadata
+      url: /custom-metadata-2.0.html
+      output: web, pdf
+
+    - title: Editing Collection Homepage
+      url: /editing-collection-homepage-2.0.html
+      output: web, pdf
+
+    - title: Adding Rights Statements
+      url: /rights-statements-2.0.html
+      output: web, pdf
+
+    - title: Block Downloading for Content
+      url: /block-downloading-content-2.0.html
+      output: web, pdf
+
+    - title: Block Downloading for Collections
+      url: /block-downloading-collections-2.0.html
+      output: web, pdf
+
+    - title: OAI
+      url: /oai-2.0.html
+      output: web, pdf
+
   - title: Development Resources
     output: web, pdf
     folderitems:
