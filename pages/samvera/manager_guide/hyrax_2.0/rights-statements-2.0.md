@@ -18,3 +18,14 @@ version:
 ---
 
 # Adding Rights Statements
+
+To add a new rights statement, click on rights on your admin options.
+
+![Add New Generic Work](images\screenshots\rights-1.png)
+
+Rights statement page will show and on the bottom click on Add New Rights Statement
+![Add New Generic Work](images\screenshots\rights-2.png)
+
+You will be able to add a label and a URI to create a new rights statement.
+
+![Add New Generic Work](images\screenshots\rights-3.png)

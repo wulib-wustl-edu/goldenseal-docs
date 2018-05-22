@@ -18,3 +18,13 @@ version:
 ---
 
 # Editing Collection Homepage
+
+To edit a collection homepage, in the collection homepage click on edit
+
+![Add New Generic Work](images\screenshots\edit-homepage-1.png)
+
+There you will be able to edit the collection homepage content.
+
+![Add New Generic Work](images\screenshots\edit-homepage-2.png)
+
+![Add New Generic Work](images\screenshots\edit-homepage-3.png)

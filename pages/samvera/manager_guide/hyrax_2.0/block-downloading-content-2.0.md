@@ -19,4 +19,10 @@ version:
 
 # Block Downloading for Content
 
-To Block downloading for content
+Permissions to block downloading for a content are on a file level. To Block downloading for content click on edit on the file.
+
+![Add New Generic Work](images\screenshots\block-content-1.png)
+
+Below the upload file option a prevent downloading checkbox will appear and if checked the file will be clocked for downloading.
+
+![Add New Generic Work](images\screenshots\block-content-2.png)
