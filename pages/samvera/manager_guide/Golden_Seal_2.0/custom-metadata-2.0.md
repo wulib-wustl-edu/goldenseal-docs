@@ -10,9 +10,9 @@ categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-master'
   versions:  
-    - label: 'Hyrax 1.0'
+    - label: 'Golden Seal 1.0'
       link:  'custom-metadata-1.0.html'
-    - label: 'Hyrax 2.0'
+    - label: 'Golden Seal 2.0'
       link:  'custom-metadata-2.0.html'
       selected: 'true'
 ---
@@ -31,6 +31,6 @@ A sidebar with options will be on the left side. Click on Metadata
 
 ![Add New Generic Work](images\screenshots\custom-metadata-3.png)
 
-You can name the field and add a short description and save it to add new metadata. 
+You can name the field and add a short description and save it to add new metadata.
 
 ![Add New Generic Work](images\screenshots\custom-metadata-4.png)

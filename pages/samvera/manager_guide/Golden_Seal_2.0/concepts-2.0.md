@@ -10,9 +10,9 @@ categories:
 version:
   id: 'hyrax_2.0-master'
   versions:  
-  - label: 'Hyrax 1.0'
+  - label: 'Golden Seal 1.0'
     link:  'concepts-1.0.html'
-  - label: 'Hyrax 2.0'
+  - label: 'Golden Seal 2.0'
     link:  'concepts-2.0.html'
     selected: 'true'
 ---

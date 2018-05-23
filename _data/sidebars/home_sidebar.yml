@@ -92,10 +92,6 @@ entries:
     output: web
     folderitems:
 
-    - title: What's New in Hyrax 2.0?
-      url: /whats-new.html
-      output: web, pdf
-
     - title: Concepts and Definitions
       url: /concepts-2.0.html
       output: web, pdf
