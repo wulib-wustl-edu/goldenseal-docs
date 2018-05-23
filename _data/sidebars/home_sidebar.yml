@@ -96,10 +96,6 @@ entries:
       url: /concepts-2.0.html
       output: web, pdf
 
-    - title: Configuring the Repository
-      url: /configuration.html
-      output: web, pdf
-
     - title: Creating a Work
       url: /create-works-2.0.html
       output: web, pdf
