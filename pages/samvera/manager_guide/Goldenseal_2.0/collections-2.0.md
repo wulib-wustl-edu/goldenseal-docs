@@ -10,14 +10,10 @@ categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-master'
   versions:  
-  - label: 'Golden Seal 1.0'
-    link:  'collections-1.0.html'
-  - label: 'Golden Seal 2.0'
+  - label: 'Goldenseal 2.0'
     link:  'collections-2.0.html'
     selected: 'true'
 ---
-
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
 
 ## View Your Collections
 

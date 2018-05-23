@@ -10,9 +10,7 @@ categories: How to use the Administration panel in hyrax
 version:
   id: 'hyrax_2.0-master'
   versions:  
-    - label: 'Golden Seal 1.0'
-      link:  'custom-metadata-1.0.html'
-    - label: 'Golden Seal 2.0'
+    - label: 'Goldenseal 2.0'
       link:  'custom-metadata-2.0.html'
       selected: 'true'
 ---

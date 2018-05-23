@@ -11,11 +11,9 @@ version:
   id: 'hyrax_2.0-master'
 ---
 
-*This Guide is maintained by Samvera's [Repository Management Interest Group](https://wiki.duraspace.org/display/samvera/Repository+Management+Interest+Group). Screenshots are taken from [Nurax](https://nurax.curationexperts.com/), a testing repository running on the latest release of Hyrax. Hosting is generously provided by [Data Curation Experts](https://curationexperts.com/). Please open an issue on our [GitHub repository](https://github.com/samvera/samvera.github.io) to request edits or additions.*
-
 ## Leases
 
-![Manage Leases](/images/screenshots/manage-leases.png)
+![Manage Leases](/images/screenshots/leases.png)
 
 **Leases do not automatically expire. Leases need to be updated manually.**
 
@@ -33,7 +31,7 @@ To deactivate leases:
 
 ## Embargoes
 
-![Manage Embargoes](/images/screenshots/manage-embargoes.png)
+![Manage Embargoes](/images/screenshots/embargoes.png)
 
 **Embargoes do not automatically expire. Embargoes need to be updated and deactivated manually.**
 
