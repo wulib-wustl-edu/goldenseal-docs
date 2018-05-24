@@ -45,15 +45,13 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/actor_stack.html'>Actor Stack, Middleware</a>
       <br>
+      <a class='atoz_term' href='/custom-metadata-2.0.html'>Adding Custom Metadata</a>
+      <br>
+      <a class='atoz_term' href='/rights-statements-2.0.html'>Adding Rights Statements</a>
+      <br>
       <a class='atoz_term' href='/admin-set-participants.html'>Admin Sets - Participants</a>
       <br>
       <a class='atoz_term' href='/admin-sets-as-collections-faq.html'>Admin Sets as Collections FAQ</a>
-      <br>
-      <a class='atoz_term' href='/batch-works-1.0.html'>Administration</a>
-      <br>
-      <a class='atoz_term' href='/create-works-1.0.html'>Administration</a>
-      <br>
-      <a class='atoz_term' href='/edit-works-1.0.html'>Administration</a>
       <br>
       <a class='atoz_term' href='/admin-sets-2.0.html'>Administrative Sets</a>
       <br>
@@ -63,6 +61,10 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='b'>&nbsp;</a>
     <span class='atoz_section_label'>B</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/block-downloading-collections-2.0.html'>Block Downloading for Collections</a>
+      <br>
+      <a class='atoz_term' href='/block-downloading-content-2.0.html'>Block Downloading for Content</a>
+      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -109,15 +111,11 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/communication.html'>Communication</a>
       <br>
-      <a class='atoz_term' href='/concepts-1.0.html'>Concepts and Definitions</a>
-      <br>
       <a class='atoz_term' href='/concepts-2.0.html'>Concepts and Definitions</a>
       <br>
       <a class='atoz_term' href='/how-to-disable-notifications.html'>Configure Hyrax 1 User Polling Notifications</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-discovery.html'>Configuring Discovery</a>
-      <br>
-      <a class='atoz_term' href='/configuration.html'>Configuring the Repository</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-controlled-vocabulary.html'>Controlled Vocabularies (Customizing Metadata)</a>
       <br>
@@ -131,13 +129,9 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/groups.html'>Creating User Groups</a>
       <br>
-      <a class='atoz_term' href='/batch-works-1.0.html'>Creating Works in a Batch</a>
-      <br>
       <a class='atoz_term' href='/batch-works-2.0.html'>Creating Works in a Batch</a>
       <br>
       <a class='atoz_term' href='/customize-metadata-other-customizations.html'>Creating a Default Deposit Agreement</a>
-      <br>
-      <a class='atoz_term' href='/create-works-1.0.html'>Creating a Work</a>
       <br>
       <a class='atoz_term' href='/create-works-2.0.html'>Creating a Work</a>
       <br>
@@ -183,7 +177,7 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='e'>&nbsp;</a>
     <span class='atoz_section_label'>E</span>
     <div class='atoz_terms'>
-      <a class='atoz_term' href='/edit-works-1.0.html'>Editing a Work</a>
+      <a class='atoz_term' href='/editing-collection-homepage-2.0.html'>Editing Collection Homepage</a>
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>Editing a Work</a>
       <br>
@@ -223,8 +217,6 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/glossary-2.1.html'>Glossary of Terms</a>
       <br>
-      <a class='atoz_term' href='/concepts-1.0.html'>glossary</a>
-      <br>
     </div>
   </div>
   <div class='atoz_section'>
@@ -240,8 +232,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/toggle-features.html'>How to Enable and Disable Features</a>
       <br>
       <a class='atoz_term' href='/how-to-pr.html'>How to Submit Pull Requests</a>
-      <br>
-      <a class='atoz_term' href='/hyku-vs-hyrax.html'>Hyku vs Hyrax?</a>
       <br>
       <a class='atoz_term' href='/release_process.html'>Hyrax Testing and Release Process</a>
       <br>
@@ -309,19 +299,27 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/batch-works-2.0.html'>manager_guide</a>
       <br>
+      <a class='atoz_term' href='/block-downloading-collections-2.0.html'>manager_guide</a>
+      <br>
+      <a class='atoz_term' href='/block-downloading-content-2.0.html'>manager_guide</a>
+      <br>
       <a class='atoz_term' href='/collections-2.0.html'>manager_guide</a>
       <br>
       <a class='atoz_term' href='/concepts-2.0.html'>manager_guide</a>
       <br>
-      <a class='atoz_term' href='/configuration.html'>manager_guide</a>
-      <br>
       <a class='atoz_term' href='/create-works-2.0.html'>manager_guide</a>
+      <br>
+      <a class='atoz_term' href='/custom-metadata-2.0.html'>manager_guide</a>
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>manager_guide</a>
       <br>
+      <a class='atoz_term' href='/editing-collection-homepage-2.0.html'>manager_guide</a>
+      <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>manager_guide</a>
       <br>
-      <a class='atoz_term' href='/whats-new.html'>manager_guide</a>
+      <a class='atoz_term' href='/oai-2.0.html'>manager_guide</a>
+      <br>
+      <a class='atoz_term' href='/rights-statements-2.0.html'>manager_guide</a>
       <br>
     </div>
   </div>
@@ -341,6 +339,8 @@ sidebar: home_sidebar
     <a class='atoz_anchor' name='o'>&nbsp;</a>
     <span class='atoz_section_label'>O</span>
     <div class='atoz_terms'>
+      <a class='atoz_term' href='/oai-2.0.html'>OAI</a>
+      <br>
       <a class='atoz_term' href='/blacklight-plugins.html'>Other Blacklight Plugins</a>
       <br>
       <a class='atoz_term' href='/other-getting-started.html'>Other Helpful Getting Started Docs</a>
@@ -417,6 +417,8 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/js/mydoc_scroll.html'>Scroll layout</a>
       <br>
+      <a class='atoz_term' href='/search/'>Search</a>
+      <br>
       <a class='atoz_term' href='/collection-sharing.html'>Sharing for Collections</a>
       <br>
       <a class='atoz_term' href='/service-stack.html'>Solr Fedora Rails Redis</a>
@@ -471,19 +473,27 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/batch-works-2.0.html'>user_guide</a>
       <br>
+      <a class='atoz_term' href='/block-downloading-collections-2.0.html'>user_guide</a>
+      <br>
+      <a class='atoz_term' href='/block-downloading-content-2.0.html'>user_guide</a>
+      <br>
       <a class='atoz_term' href='/collections-2.0.html'>user_guide</a>
       <br>
       <a class='atoz_term' href='/concepts-2.0.html'>user_guide</a>
       <br>
-      <a class='atoz_term' href='/configuration.html'>user_guide</a>
-      <br>
       <a class='atoz_term' href='/create-works-2.0.html'>user_guide</a>
+      <br>
+      <a class='atoz_term' href='/custom-metadata-2.0.html'>user_guide</a>
       <br>
       <a class='atoz_term' href='/edit-works-2.0.html'>user_guide</a>
       <br>
+      <a class='atoz_term' href='/editing-collection-homepage-2.0.html'>user_guide</a>
+      <br>
       <a class='atoz_term' href='/lease-embargoes-2.0.html'>user_guide</a>
       <br>
-      <a class='atoz_term' href='/whats-new.html'>user_guide</a>
+      <a class='atoz_term' href='/oai-2.0.html'>user_guide</a>
+      <br>
+      <a class='atoz_term' href='/rights-statements-2.0.html'>user_guide</a>
       <br>
     </div>
   </div>
@@ -506,8 +516,6 @@ sidebar: home_sidebar
       <a class='atoz_term' href='/what-happens-deposit-1.0.html'>What Happens When I Deposit Something? (Hyrax 1.0)</a>
       <br>
       <a class='atoz_term' href='/what-happens-deposit-2.0.html'>What Happens When I Deposit Something? (Hyrax 2.0)</a>
-      <br>
-      <a class='atoz_term' href='/whats-new.html'>What's New in Hyrax 2?</a>
       <br>
       <a class='atoz_term' href='/workflow_and_mediated_deposit.html'>Workflow and Mediated Deposit in Hyrax 1.x</a>
       <br>

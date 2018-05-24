@@ -7,13 +7,11 @@ folder: pages/samvera/1_new_start_here/our_technology_stack.md
 tags: [getting_started]
 ---
 
-![Architecture Diagram](https://wiki.duraspace.org/download/attachments/22022608/hydra_9_architecture_2016.png?version=1&modificationDate=1467992759221&api=v2)
+## Sufia
 
-## Hyrax
+This project is currently build on top of Curation Concerns and Sufia. In more recent versions of Samvera these two components have been merged to form [Hyrax](http://hyr.ax/about/).
 
-If you are starting a new Samvera project, we strongly recommend you start with [Hyrax](http://hyr.ax/about/).
-
-At the top of our architecture diagram is "Samvera Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Samvera conventions. While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community. We are in the process of focusing our community development efforts on Hyrax, and that will be the code base we are best able to support and maintain.
+At the top of our architecture are "Samvera Applications." Broadly, these are [Ruby on Rails](http://rubyonrails.org/) based applications that follow Samvera conventions. While it is possible to create your own Samvera application by assembling the right components, and this has been a common practice in the Samvera community in the past, ongoing maintenance of home grown solutions will be more expensive than sharing maintenance costs with the rest of the community. We are in the process of focusing our community development efforts on Hyrax, and that will be the code base we are best able to support and maintain.
 
 ## Fedora 4
 
