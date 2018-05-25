@@ -1,0 +1,17 @@
+version: "3"
+services:
+  web:
+    command: jekyll serve
+    image: jekyll/jekyll:latest
+    volumes:
+      - $PWD:/srv/jekyll
+      - $PWD/vendor/bundle:/usr/local/bundle
+    restart: unless-stopped
+    ports:
+      - "80"
+    labels:
+      rap.host: ${SITE_URI}
+      rap.le_host: ${SITE_URI}
+      rap.le_test: true
+      io.rancher.container.pull_image: always
+

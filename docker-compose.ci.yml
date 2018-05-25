@@ -1,0 +1,14 @@
+version: "3"
+services:
+  web:
+    image: jekyll/jekyll:latest
+    command: jekyll serve
+    ports:
+      - "80"
+    labels:
+      rap.host: ${SITE_URI}
+      rap.le_host: ${SITE_URI}
+      rap.le_test: true
+      io.rancher.container.pull_image: always
+
+

@@ -19,3 +19,4 @@ group :development, :test do
   gem "rack-jekyll"
   gem "pry-byebug"
 end
+gem 'activerecord-nulldb-adapter'
