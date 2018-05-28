@@ -2,9 +2,20 @@ image: docker:17.04
 services:
   - docker:dind
 stages:
+  - build
   - review
   - staging
   - production
+build:
+  stage: build
+  script:
+    - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" $CI_REGISTRY
+    - docker build --pull -t "$CI_REGISTRY_IMAGE:$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG" .
+    - docker push "$CI_REGISTRY_IMAGE:$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG"
+  variables:
+    GIT_STRATEGY: fetch
+  tags:
+    - docker
 review:
   stage: review
   image: docker:17.04

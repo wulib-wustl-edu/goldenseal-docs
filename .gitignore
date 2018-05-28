@@ -3,3 +3,5 @@ _site/
 generated/
 .DS_Store
 vendor/bundle/
+**/*.swp
+**/*.swo
