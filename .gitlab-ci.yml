@@ -60,8 +60,8 @@ staging:
     - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
     - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
     - export RANCHER_ENVIRONMENT=staging
-    - export TAG=tctrac-master
-    - export SITE_URI=staging.tctrac.com
+    - export TAG=goldenseal-docs-master
+    - export SITE_URI=staging.goldensealdocs.notch8.com
     - ./rancher-v0.4.1/rancher up -p -d -u -c -f docker-compose-ci.yml --stack $CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
   when: manual
   only:
@@ -77,8 +77,8 @@ production:
     - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
     - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
     - export RANCHER_ENVIRONMENT=production
-    - export TAG=tctrac-master
-    - export SITE_URI=www.tctrac.com
+    - export TAG=goldenseal-docs-master
+    - export SITE_URI=goldenseal-docs.notch8.com
     - ./rancher-v0.4.1/rancher up -p -d -u -c -f docker-compose-prod.yml
   when: manual
   only:
