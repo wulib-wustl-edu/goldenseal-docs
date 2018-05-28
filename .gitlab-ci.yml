@@ -5,27 +5,13 @@ stages:
   - review
   - staging
   - production
-variables:
-  DOCKER_DRIVER: overlay
-  REGISTRY_HOST: registry.gitlab.com
-  REGISTRY_URI: TODO/goldenseal-docs
-  SITE_URI_BASE: TODO
-
-before_script:
-  - export REGISTRY_FULL=registry.gitlab.com/notch8/ror-site/$CI_COMMIT_REF_SLUG:${CI_COMMIT_SHA:0:8}
-  - export TAG=$CI_COMMIT_REF_SLUG
-  - eval $(ssh-agent -s)
-  - bash
-  - ssh-add <(echo "$SSH_PRIVATE_KEY") 
-  - mkdir -p ~/.ssh
-  - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-
 review:
   stage: review
+  image: docker:17.04
   type: deploy
   environment:
-    name: $CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG
-    url: http://web.$CI_PROJECT_NAME-$CI_COMMIT_REF_SLUG.staging.$SITE_URI_BASE
+    name: review/$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
+    url: http://web.$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG.staging.notch8network.com
     on_stop: stop_review
   only:
     - branches
@@ -36,20 +22,26 @@ review:
     - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
     - export RANCHER_ENVIRONMENT=staging
     - export TAG=$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
+    - export SITE_URI=web.$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG.staging.notch8network.com
     - ./rancher-v0.4.1/rancher up -p -d -u -c -s $TAG -f docker-compose-ci.yml
-
- tags:
+  variables:
+    GIT_STRATEGY: fetch
+  tags:
     - docker
-
+    - mysql
 stop_review:
   stage: review
   script:
-
+    - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
+    - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
+    - export RANCHER_ENVIRONMENT=staging
+    - ./rancher-v0.4.1/rancher rm $CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
+  variables:
+    GIT_STRATEGY: none
   when: manual
   environment:
-    name: $CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
+    name: review/$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
     action: stop
-
 staging:
   stage: staging
   type: deploy
@@ -57,25 +49,9 @@ staging:
     - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
     - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
     - export RANCHER_ENVIRONMENT=staging
-    - export TAG=$CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
+    - export TAG=tctrac-master
+    - export SITE_URI=staging.tctrac.com
     - ./rancher-v0.4.1/rancher up -p -d -u -c -f docker-compose-ci.yml --stack $CI_PROJECT_NAME-$CI_BUILD_REF_SLUG
-  only:
-    - master
-  tags:
-    - docker
-
-production:
-  stage: production
-  type: deploy
-  script:
-    script:
-      - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
-      - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
-      - export RANCHER_ENVIRONMENT=production
-      - export TAG=goldenseal-docs-master
-      - export SITE_URI=goldenseal-docs.notch8.com
-      - ./rancher-v0.4.1/rancher up -p -d -u -c -f docker-compose.production.yml
-
   when: manual
   only:
     - master
@@ -83,3 +59,21 @@ production:
     GIT_STRATEGY: fetch
   tags:
     - docker
+production:
+  stage: production
+  type: deploy
+  script:
+    - wget https://github.com/rancher/cli/releases/download/v0.4.1/rancher-linux-amd64-v0.4.1.tar.gz
+    - tar zxfv rancher-linux-amd64-v0.4.1.tar.gz
+    - export RANCHER_ENVIRONMENT=production
+    - export TAG=tctrac-master
+    - export SITE_URI=www.tctrac.com
+    - ./rancher-v0.4.1/rancher up -p -d -u -c -f docker-compose-prod.yml
+  when: manual
+  only:
+    - master
+  variables:
+    GIT_STRATEGY: fetch
+  tags:
+    - docker
+
