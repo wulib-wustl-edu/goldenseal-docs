@@ -1,12 +1,10 @@
-image: jekyll/jekyll:latest
+image: docker:17.04
 services:
   - docker:dind
-
 stages:
   - review
   - staging
   - production
-
 variables:
   DOCKER_DRIVER: overlay
   REGISTRY_HOST: registry.gitlab.com
