@@ -1,9 +1,8 @@
-image: $CI_REGISTRY_IMAGE/builder:latest
+image: jekyll/jekyll:latest
 services:
   - docker:dind
 
 stages:
-  - build
   - review
   - staging
   - production
@@ -22,15 +21,6 @@ before_script:
   - ssh-add <(echo "$SSH_PRIVATE_KEY") 
   - mkdir -p ~/.ssh
   - '[[ -f /.dockerenv ]] && echo -e "Host *\n\tStrictHostKeyChecking no\n\n" > ~/.ssh/config'
-
-build:
-  stage: build
-  script:
-    - docker login -u "gitlab-ci-token" -p "$CI_BUILD_TOKEN" $CI_REGISTRY
-    - sc build
-    - sc push
-  tags:
-    - docker
 
 review:
   stage: review
