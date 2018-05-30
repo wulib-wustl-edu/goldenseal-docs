@@ -105,9 +105,8 @@ sidebars:
 
 description: ""
 # the description is used in the feed.xml file
-url: https://notch8.github.io
-production_url: https://notch8.github.io
-baseurl: /goldenseal-docs
+url: https://notch8.github.io/goldenseal-docs
+production_url: https://notch8.github.io/goldenseal-docs 
 
 a_z:
     index_title: false
