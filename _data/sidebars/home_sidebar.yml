@@ -79,7 +79,7 @@ entries:
       url: /lease-embargoes-2.0.html
       output: web, pdf
 
-    - title: Adding Custom Metadata
+    - title: Adding Custom Metadata Fields
       url: /custom-metadata-2.0.html
       output: web, pdf
 

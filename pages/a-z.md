@@ -45,7 +45,7 @@ sidebar: home_sidebar
       <br>
       <a class='atoz_term' href='/actor_stack.html'>Actor Stack, Middleware</a>
       <br>
-      <a class='atoz_term' href='/custom-metadata-2.0.html'>Adding Custom Metadata</a>
+      <a class='atoz_term' href='/custom-metadata-2.0.html'>Adding Custom Metadata Fields</a>
       <br>
       <a class='atoz_term' href='/rights-statements-2.0.html'>Adding Rights Statements</a>
       <br>
