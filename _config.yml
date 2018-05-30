@@ -125,6 +125,5 @@ a_z:
 theme: jekyll-theme-minimal
 
 # needed for sitemap.xml file only
-url: http://samvera.github.io
 gems:
   - jekyll-sitemap
