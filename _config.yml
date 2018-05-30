@@ -123,7 +123,7 @@ a_z:
     front_matter_ext:
       - 'sidebar: home_sidebar'
 
-theme: jekyll-theme-slate
+theme: jekyll-theme-minimal
 
 # needed for sitemap.xml file only
 url: http://samvera.github.io
