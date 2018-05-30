@@ -105,9 +105,9 @@ sidebars:
 
 description: ""
 # the description is used in the feed.xml file
-url: http://samvera.github.io
-production_url : https://samvera.github.io
-BASE_PATH : https://samvera.github.io
+url: https://notch8.github.io
+production_url : https://notch8.github.io
+BASE_PATH : https://notch8.github.io
 
 a_z:
     index_title: false
