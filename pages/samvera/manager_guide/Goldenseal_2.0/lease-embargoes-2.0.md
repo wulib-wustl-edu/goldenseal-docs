@@ -31,7 +31,7 @@ To deactivate leases:
 
 ## Embargoes
 
-![Manage Embargoes](/images/screenshots/embargoes.png)
+![Manage Embargoes]({{site.baseurl}}/images/screenshots/embargoes.png)
 
 **Embargoes do not automatically expire. Embargoes need to be updated and deactivated manually.**
 

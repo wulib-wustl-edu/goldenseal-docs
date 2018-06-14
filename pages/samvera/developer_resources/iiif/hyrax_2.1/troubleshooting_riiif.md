@@ -34,8 +34,8 @@ Open your console and make sure that `iiif_info_url_builder` is returning someth
 ```ruby
 2.4.2 :014 > fs = FileSet.find("cz30ps64c")
  => #<FileSet id: "cz30ps64c", head: [], tail: [], depositor: "bess@curationexperts.com", title: ["12219615_10153532796406998_4944957625326024288_n.jpg"], date_uploaded: "2018-05-06 14:32:42", date_modified: "2018-05-06 14:32:42", label: "12219615_10153532796406998_4944957625326024288_n.j...", relative_path: nil, import_url: nil, resource_type: [], creator: ["bess@curationexperts.com"], contributor: [], description: [], keyword: [], license: [], rights_statement: [], publisher: [], date_created: [], subject: [], language: [], identifier: [], based_near: [], related_url: [], bibliographic_citation: [], source: [], access_control_id: "c4cc4449-a032-4acf-b3b7-3b50a854f90e", embargo_id: nil, lease_id: nil>
-2.4.2 :015 > Riiif::Engine.routes.url_helpers.info_url(fs.files.first.id, host: "http://localhost:3000")
- => "http://localhost:3000/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11/info.json"
+2.4.2 :015 > Riiif::Engine.routes.url_helpers.info_url(fs.files.first.id, host: "{{site.baseurl}}")
+ => "{{site.baseurl}}/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11/info.json"
 ```
 
 Now you have a URL that should work to retrieve a IIIF image information document. Put it into a browser and see what that URL returns. It should give you something that looks like this:
@@ -45,7 +45,7 @@ Now you have a URL that should work to retrieve a IIIF image information documen
   "width": 960,
   "height": 720,
   "@context": "http://iiif.io/api/image/2/context.json",
-  "@id": "http://localhost:3000/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11",
+  "@id": "{{site.baseurl}}/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11",
   "protocol": "http://iiif.io/api/image",
   "profile": ["http://iiif.io/api/image/2/level1.json", {
     "formats": ["jpg", "png"]
@@ -80,8 +80,8 @@ Once you are sure that the RIIIF info service is returning information as expect
 2. See what url `iiif_image_url_builder` is returning. In your rails console (note the comma after the 100):
 
   ```ruby
-  2.4.2 :018 > Riiif::Engine.routes.url_helpers.image_url(fs.files.first.id, host: "http://localhost:3000", size: "100,")
-   => "http://localhost:3000/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11/full/100,/0/default.jpg"
+  2.4.2 :018 > Riiif::Engine.routes.url_helpers.image_url(fs.files.first.id, host: "{{site.baseurl}}", size: "100,")
+   => "{{site.baseurl}}/images/cz30ps64c%2Ffiles%2F2ae0fa37-9052-460c-a56b-ab4603403f11/full/100,/0/default.jpg"
   ``` 
   Then, see if that URL returns an image to you in the browser. 
 
