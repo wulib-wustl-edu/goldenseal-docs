@@ -61,7 +61,7 @@ Workflows dictate how a Work moves through review and publishing stages in your 
 
 *Example: A department requires students to submit a Senior Honors Thesis, but faculty must read and approve them before they are available to the public.*
 
-![Features - Turn on Mediated Deposits](/images/screenshots/dashboard-features.png)
+![Features - Turn on Mediated Deposits]({{site.baseurl}}/images/screenshots/dashboard-features.png)
 
 **Set up a mediated deposit workflow:**
 
@@ -70,7 +70,7 @@ Workflows dictate how a Work moves through review and publishing stages in your 
 - Add managers who will become “Reviewers” of the set. You do not need to assign these roles under “Workflow Roles” unless you have set up a custom workflow.
 - Click the Workflow tab and select “One-step Mediated Deposit Workflow”
 
-![Review Submissions](/images/screenshots/review-submissions.png)
+![Review Submissions]({{site.baseurl}}/images/screenshots/review-submissions.png)
 
 **Reviewing Works in Mediated Deposit:**
 - In the Dashboard, click on “Tasks,” then “Review Submissions.”  You will see a list of works requiring your review. Repository Admins will see all works in the repository, other reviewers will only see works in Admin Sets for which they are designated Managers.

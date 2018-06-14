@@ -37,7 +37,7 @@ toc: false
 ![uncle bob](https://cleancoders.com/assets/images/authors-robert-martin-v0.jpg "uncle bob")
 
 
-![agile](/images/agile_software_development.jpg "agile")
+![agile]({{site.baseurl}}/images/agile_software_development.jpg "agile")
 
 ### SOLID: The first five principles
 

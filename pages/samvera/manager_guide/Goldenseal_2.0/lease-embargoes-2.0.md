@@ -13,7 +13,7 @@ version:
 
 ## Leases
 
-![Manage Leases](/images/screenshots/leases.png)
+![Manage Leases]({{site.baseurl}}/images/screenshots/leases.png)
 
 **Leases do not automatically expire. Leases need to be updated manually.**
 
