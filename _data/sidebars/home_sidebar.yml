@@ -71,10 +71,6 @@ entries:
       url: /collections-2.0.html
       output: web, pdf
 
-    - title: Batch Uploading Works
-      url: /batch-works-2.0.html
-      output: web, pdf
-
     - title: Leases and Embargoes
       url: /lease-embargoes-2.0.html
       output: web, pdf

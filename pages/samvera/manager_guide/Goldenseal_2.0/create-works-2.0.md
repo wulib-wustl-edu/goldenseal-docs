@@ -19,16 +19,15 @@ version:
 
 Works are items in the repository, containing files and metadata. Works are presented as one intellectual object. Example: A single dissertation (PDF and metadata), a dataset containing multiple files (spreadsheets, images, text files and metadata).
 
-A user must be logged in to create a Work. There are several ways to add a new work:
+A user must be logged in to create a Work. To add a new work:
 
-- On the homepage, click "Share Your Work"
-- From the Dashboard, click on the "Works" sub-heading, click "Add new work"
+- From the Dashboard, click on the "+" sub-heading. Under the "Add a Work" heading, click the appropriate work you would like to create.
 
 If your repository contains more than one work type, you will need to select the work type to proceed. Work types allow repository managers to create separate deposit forms based on the type of work, such as Dissertations, Images, or Datasets. Each work type might have specific metadata requirements or deposit instructions.
 
 ![Add New Generic Work](images\screenshots\create-work-1.png)
 
-There three tabs in the Add New Work interface: “Description”, “Files”, and “Relationships”. In order for the work to be deposited, a work must minimally have: the required description fields filled out, at least one file uploaded, and the deposit agreement checkbox checked. Once these required items are completed, the depositor must click “Save” in order to deposit the work. Navigating away from the deposit screen before clicking save causes user to have to redo deposit.
+In order for the work to be deposited, a work must minimally have: the required description fields filled out, at least one file uploaded, and the deposit agreement checkbox checked. Once these required items are completed, the depositor must click “Save” in order to deposit the work. Navigating away from the deposit screen before clicking save causes user to have to redo deposit.
 
 ## Description (required)
 The “Description” tab is for adding descriptive metadata. Fill out the fields marked “Required”. Clicking “Additional Fields” will show more metadata fields, which are optional. Customizing fields is possible by creating a new Work Type.
