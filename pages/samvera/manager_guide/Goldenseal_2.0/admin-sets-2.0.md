@@ -15,7 +15,7 @@ version:
       selected: 'true'
 ---
 
-Hyrax must have at least one Admin set in order for users to add content to the repository. Repository Administrators can create additional Admin sets as needed. Admin sets are advised to use when you have a set of works that need default behaviors and/or permissions. For example, if you have a set of works that specific users need to be able to edit or view. Admin sets also work well for sets of works that need to follow a particular publishing workflow, like supporting the mediated deposit of student papers.
+Goldenseal must have at least one Admin set in order for users to add content to the repository. Repository Administrators can create additional Admin sets as needed. Admin sets are advised to use when you have a set of works that need default behaviors and/or permissions. For example, if you have a set of works that specific users need to be able to edit or view. Admin sets also work well for sets of works that need to follow a particular publishing workflow, like supporting the mediated deposit of student papers.
 
 You *must* create at least one Admin Set. This is usually done at the time of setup. All works in your repository must belong to one, and only one Admin Set. Repository Admins can create additional Admin sets as needed.
 

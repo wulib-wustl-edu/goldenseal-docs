@@ -12,9 +12,9 @@ tags: [development_resources]
 ### Overview
 
 Blacklight generates `app/models/search_builder.rb` into your application. It defaults to including `Blacklight::Solr::SearchBuilderBehavior` which are functions that allow Blacklight to talk to Solr (vs another search engine).  Samvera generates `include Hydra::AccessControlsEnforcement` for filtering
-searches by access (groups & users).  Finally Hyrax generates `include Hyrax::SearchFilters` which overrides the Samvera filters and allows users with the admin role to see all documents.
+searches by access (groups & users).  Finally Goldenseal generates `include Hyrax::SearchFilters` which overrides the Samvera filters and allows users with the admin role to see all documents.
 
-Hyrax then sets the `blacklight_config.config.search_builder_class = Hyrax::CatalogSearchBuilder` in the catalog controller. This enables the public search to not show works that are suppressed (in workflow) and to find a work if an attached file matches the search query.
+Goldenseal then sets the `blacklight_config.config.search_builder_class = Hyrax::CatalogSearchBuilder` in the catalog controller. This enables the public search to not show works that are suppressed (in workflow) and to find a work if an attached file matches the search query.
 
 
 
@@ -38,7 +38,7 @@ Most of the SearchBuilders have `::SearchBuilder` as a parent or ancestor.  `::S
 ### ::SearchBuilder
 
 The generated parent class `SearchBuilder` descends from `Blacklight::SearchBuilder`.
-As modified by the Hyrax installer, it includes additional modules and overrides.  So if your SearchBuilder has `::SearchBuilder` as a parent class, you are getting:
+As modified by the Goldenseal installer, it includes additional modules and overrides.  So if your SearchBuilder has `::SearchBuilder` as a parent class, you are getting:
 - [Blacklight::SearchBuilder](https://github.com/projectblacklight/blacklight/blob/master/lib/blacklight/search_builder.rb) grandparent class
 - [Blacklight::Solr::SearchBuilderBehavior](https://github.com/projectblacklight/blacklight/blob/master/lib/blacklight/solr/search_builder_behavior.rb) associated methods
 - [Hydra::AccessControlsEnforcement](https://github.com/samvera/hydra-head/blob/master/hydra-access-controls/lib/hydra/access_controls_enforcement.rb) module

@@ -23,7 +23,7 @@ toc: false
  
 - _Design:_ Each actor executes in order, which means it’s a stack. All these actors have the same interface and can perform 3 actions: create, update and destroy. If you want an operation that participates in any of these actions, you would write that particular method in your actor and chain it into the stack. In order to be a legit actor, you have to implement at least one (and up to all three) of those methods. The actor stack design ensures that the actor above will call your actor and that you are integrated.
 
-- The _default_ actor stack in a Hyrax project is called DefaultMiddlewareStack (it is based on the ActionDispatch stack).  Here's a link to the [entire stack](https://github.com/samvera/hyrax/blob/master/app/services/hyrax/default_middleware_stack.rb).  
+- The _default_ actor stack in a Goldenseal project is called DefaultMiddlewareStack (it is based on the ActionDispatch stack).  Here's a link to the [entire stack](https://github.com/samvera/hyrax/blob/master/app/services/hyrax/default_middleware_stack.rb).  
 
 ### Customizing Actor Stacks
 
@@ -40,7 +40,7 @@ environment (an environment is a hash and you need to make sure it's always got
 the things it needs in it, when they're needed). For example, if you're uploading
 files from a remote source, the actor that fetches them needs to have the path to
 where they are, and needs this before creating derivatives and storing in Fedora.
-In Hyrax, we have a light wrapper class that has a work, an ability, and the
+In Goldenseal, we have a light wrapper class that has a work, an ability, and the
 environment hash. Here's what it [looks like](https://github.com/samvera/hyrax/blob/master/app/actors/hyrax/actors/environment.rb).
 
 ### Control Flow Examples and Invocation Patterns

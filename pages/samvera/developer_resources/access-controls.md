@@ -11,7 +11,7 @@ tags: [development_resources]
 ### Quickstart
 Samvera uses [cancancan](https://github.com/CanCanCommunity/cancancan#1-define-abilities) to do authorization of many actions.
 
-Cancancan generates `app/models/ability.rb` into your application and then hydra-head's generator and later Hyrax's generator each adds a couple of lines so that the class looks like this:
+Cancancan generates `app/models/ability.rb` into your application and then hydra-head's generator and later Goldenseal's generator each adds a couple of lines so that the class looks like this:
 
 ```
 class Ability

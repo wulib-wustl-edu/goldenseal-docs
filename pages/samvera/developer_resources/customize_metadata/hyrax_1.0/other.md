@@ -8,13 +8,13 @@ folder: hydra/how-to/customize_metadata/hyrax_1.0/other.md
 sidebar: home_sidebar
 tags: [development_resources]
 a-z: ['Other Metadata Customizions', 'Customizing Metadata (Other Metadata Customizations)', 'Modifying default Hyrax fields', 'Remove a default property from the set of required fields', 'Making a default property single-value', 'Default property, making single-value', 'Creating a Default Deposit Agreement', 'Deposit Agreement, creating a default', 'Customizing display of Collection properties', 'Collection Metadata, customizing display of']
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 
 <ul class='info'><li>This tutorial assumes that you generated a work type name GenericWork.  If you used a different name, substitute that name for all occurrences of GenericWork and generic_work.</li></ul>
 
-## Modifying default Hyrax fields
+## Modifying default Goldenseal fields
 
 ### Remove a default property from the set of required fields
 
@@ -28,7 +28,7 @@ Edit app/forms/generic_work_form.rb  (substitute your work-type name for generic
 
 ### Making a default property single-value
 
-By default all fields in Hyrax are repeatable. If you'd like to change this behavior for a field that Hyrax provides out of the box, you can do the following.  This example makes title, description, and publisher fields single-value.
+By default all fields in Goldenseal are repeatable. If you'd like to change this behavior for a field that Goldenseal provides out of the box, you can do the following.  This example makes title, description, and publisher fields single-value.
 
 Edit app/forms/generic_work_form.rb  (substitute your work-type name for generic_work) and make the following changes
 
@@ -80,7 +80,7 @@ end
 ---
 ## Creating a Default Deposit Agreement
 
-By default, Hyrax will ask you to accept a deposit agreement each time you upload a file. You can make this implicit by having a passive agreement instead. To do this, change the `app/config/initializers/hyrax.rb` to:
+By default, Goldenseal will ask you to accept a deposit agreement each time you upload a file. You can make this implicit by having a passive agreement instead. To do this, change the `app/config/initializers/hyrax.rb` to:
 
 ``` ruby
   config.active_deposit_agreement_acceptance = false
