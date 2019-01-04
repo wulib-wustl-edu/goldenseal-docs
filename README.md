@@ -1,6 +1,6 @@
 # Docker development setup
 
-1) Install Docker.app 
+1) Install Docker.app
 
 2) gem install stack_car
 
@@ -15,6 +15,9 @@ sc up
 ```
 
 # Deploy a new release
+
+Pushing to GitHub master deploys a new release.
+Website is deployed on: https://notch8.github.io/goldenseal-docs/
 
 ``` bash
 sc release {staging | production} # creates and pushes the correct tags
