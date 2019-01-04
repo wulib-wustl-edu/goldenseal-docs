@@ -7,7 +7,7 @@ permalink: customize-metadata-discovery.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/discovery.md
 sidebar: home_sidebar
 tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 
@@ -30,7 +30,7 @@ where...
 | `label` | tells BlackLight the label to display before the value of the metadata field in search results.  By default, the label is the property name (e.g. Contact_email). |
 
 
-See [Customizing Blacklight - Metadata Fields](http://jessiekeck.com/customizing-blacklight/metadata_fields/) for a tutorial on using the `add_index_field` method.  NOTE: This page of the tutorial also discusses the `add_show_field` method which is not used in Hyrax show pages.  The `helper_method` which is described in the context of the `add_show_field` method can also be used with the `add_index_field` method.
+See [Customizing Blacklight - Metadata Fields](http://jessiekeck.com/customizing-blacklight/metadata_fields/) for a tutorial on using the `add_index_field` method.  NOTE: This page of the tutorial also discusses the `add_show_field` method which is not used in Goldenseal show pages.  The `helper_method` which is described in the context of the `add_show_field` method can also be used with the `add_index_field` method.
 
 ## Making the property to the All Fields search
 

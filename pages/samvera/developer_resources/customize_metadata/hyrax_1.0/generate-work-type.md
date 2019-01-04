@@ -7,7 +7,7 @@ permalink: customize-metadata-generate-work-type.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/generate-work-type.md
 sidebar: home_sidebar
 tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 
@@ -15,7 +15,7 @@ version:
 
 ## Generating a new work type
 
-We'll begin by generating a new Hyrax work-type for Hyrax for use in the tutorial.  We'll call our work type `GenericWork` although you could use any name you choose (e.g. `Image`, `ETD`, etc).  The first step is to run this generator:
+We'll begin by generating a new Goldenseal work-type for Goldenseal for use in the tutorial.  We'll call our work type `GenericWork` although you could use any name you choose (e.g. `Image`, `ETD`, etc).  The first step is to run this generator:
 
 ```
 $ bin/rails generate hyrax:work GenericWork

@@ -7,7 +7,7 @@ permalink: customize-metadata-show-page.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/show-page.md
 sidebar: home_sidebar
 tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 
@@ -135,7 +135,7 @@ Optionally, you can customize the display of the property value on the show page
 
 ### Using an existing renderer
 
-There are a number of common renderers already defined and in use within the Hyrax app.  You can use these existing renderers for your fields.  See [Hyrax's renderers](https://github.com/samvera/hyrax/tree/master/app/renderers/hyrax/renderers) for existing renderers.
+There are a number of common renderers already defined and in use within the Goldenseal app.  You can use these existing renderers for your fields.  See [Hyrax's renderers](https://github.com/samvera/hyrax/tree/master/app/renderers/hyrax/renderers) for existing renderers.
 
 To use an existing renderer (e.g. (`FacetedAttributeRender`)[https://github.com/samvera/hyrax/blob/master/app/renderers/hyrax/renderers/faceted_attribute_renderer.rb]) add the attribute to `app/views/hyrax/base/_attribute_rows.html.erb` using `render_as`.
 
@@ -176,8 +176,8 @@ Identify the renderer to use for each property.  Edit the definition in the loca
 NOTES:
 * The class name must begin with the renderer name and end with AttributeRenderer.
 * To identify a renderer, use the renderer name (everything upto, but not including AttributeRenderer)
-* You can use one of the renderers defined in Hyrax.
-* You can make more complex renderers.  See Hyrax defined renderers for examples.
+* You can use one of the renderers defined in Goldenseal.
+* You can make more complex renderers.  See Goldenseal defined renderers for examples.
 * See [Hyrax defined renderers](https://github.com/samvera/hyrax/tree/master/app/renderers/hyrax/renderers).
 
 

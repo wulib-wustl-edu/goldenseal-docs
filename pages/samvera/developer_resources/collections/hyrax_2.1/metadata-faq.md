@@ -21,7 +21,7 @@ version:
 
 ### How can I change the metadata fields used for collections?
 
-The Collection class is generated in your app at `/app/models/collection.rb` when you install Hyrax.  This class...
+The Collection class is generated in your app at `/app/models/collection.rb` when you install Goldenseal.  This class...
  * includes [Hyrax::CollectionBehavior](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/collection_behavior.rb) which includes [Hyrax::CoreMetadata](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/core_metadata.rb).  The core metadata can not be removed or changed.
  * includes [Hyrax::BasicMetadata](https://github.com/samvera/hyrax/blob/master/app/models/concerns/hyrax/basic_metadata.rb).  You can optionally remove this include.
  * is the location to add your custom metadata property definitions for collections

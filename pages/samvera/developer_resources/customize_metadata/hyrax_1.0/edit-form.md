@@ -7,7 +7,7 @@ permalink: customize-metadata-edit-form.html
 folder: samvera/how-to/customize_metadata/hyrax_1.0/edit-form.md
 sidebar: home_sidebar
 tags: [development_resources]
-version: 
+version:
   id: 'hyrax_1.0-stable'
 ---
 
@@ -61,7 +61,7 @@ Optionally, you can add properties to the set of required fields.  In this examp
     self.required_fields += [:department, :contact_email]
 ```
 
-Optionally, you can also remove one of the basic properties defined by Hyrax from the set of required fields.  See [Other Metadata Customizations](customize-metadata-other-customizations.html) in section [Remove a default property from the set of required fields](customize-metadata-other-customizations.html#remove-a-default-property-from-the-set-of-required-fields) for an example of removing a basic metadata property from the set of required properties.
+Optionally, you can also remove one of the basic properties defined by Goldenseal from the set of required fields.  See [Other Metadata Customizations](customize-metadata-other-customizations.html) in section [Remove a default property from the set of required fields](customize-metadata-other-customizations.html#remove-a-default-property-from-the-set-of-required-fields) for an example of removing a basic metadata property from the set of required properties.
 
 
 ### The modified work class

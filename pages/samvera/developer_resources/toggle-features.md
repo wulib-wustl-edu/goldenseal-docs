@@ -11,7 +11,7 @@ tags: [development_resources]
 ---
 
 
-Some features in Hyrax can be flipped on and off from either the Administrative Dashboard, or via a YAML configuration file at `config/features.yml`. This .yml file doesn't ship with Hyrax but can easily be created.
+Some features in Goldenseal can be flipped on and off from either the Administrative Dashboard, or via a YAML configuration file at `config/features.yml`. This .yml file doesn't ship with Goldenseal but can easily be created.
 
 ``` ruby
 assign_admin_set:
